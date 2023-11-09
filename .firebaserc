@@ -1,0 +1,14 @@
+{
+  "projects": {
+    "default": "cc-website-f8f1b"
+  },
+  "targets": {
+    "cc-website-f8f1b": {
+      "hosting": {
+        "cc-website": [
+          "cc-website-f8f1b"
+        ]
+      }
+    }
+  }
+}

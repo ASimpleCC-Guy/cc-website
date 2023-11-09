@@ -1,1 +1,45 @@
-/* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fenix&display=swap');
+@import "~bootstrap-icons/font/bootstrap-icons.css";
+
+:root {
+	/*Paleta de colores*/
+	/*1*/
+	--primary-color: rgba(0, 0, 0, 1);
+	--primary-color-40: rgba(0, 0, 0, 0.4);
+	--primary-color-50: rgba(0, 0, 0, 0.5);
+	--primary-color-80: rgba(0, 0, 0, 0.8);
+	--primary-color-90: rgba(0, 0, 0, 0.9);
+	--primary-color-70: rgba(0, 0, 0, 0.7);
+	/*2*/
+	--secondary-color: rgba(255, 255, 255, 1);
+	--secondary-color-20: rgba(255, 255, 255, 0.2);
+	--secondary-color-40: rgba(255, 255, 255, 0.4);
+	--secondary-color-70: rgba(255, 255, 255, 0.7);
+	--secondary-color-80: rgba(255, 255, 255, 0.8);	
+	--secondary-color-90: rgba(255, 255, 255, 0.9);	
+	/*3*/
+	--quinary-color: rgba(255, 153, 51, 1);
+	--quinary-color-70: rgba(255, 153, 51, 0.7);
+}
+
+body {
+	font-family: 'Montserrat', sans-serif;
+	background: #f0f0f0;
+	color: var(--primary-color);
+	font-size: 18px;
+	line-height: 1.6;
+}
+
+a {
+	text-decoration: none;
+}
+
+ul {
+	list-style: none;
+}
+
+.section {
+	position: relative;
+	padding: 0 0;
+}

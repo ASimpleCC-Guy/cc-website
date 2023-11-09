@@ -1,0 +1,39 @@
+.card{
+    border: none;
+}
+img{
+    filter: sepia(30%) grayscale(30%);
+}
+.card-image{
+    padding: 0;
+}
+
+.card-text p{
+    font-family: 'Fenix', serif;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 35px;
+    margin: 0;
+    font-weight: 400;
+}
+
+.card:hover .overlay{
+    backdrop-filter: blur(4px) brightness(20%);
+    height: 100%;
+    top: 0;
+}
+
+.overlay{
+    cursor: pointer;
+    height: 65px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    align-items: center;
+    top: 50%;
+    color: var(--secondary-color-90);
+    text-transform: uppercase;
+    transition: .7s;
+    backdrop-filter: blur(4px) brightness(20%);
+}

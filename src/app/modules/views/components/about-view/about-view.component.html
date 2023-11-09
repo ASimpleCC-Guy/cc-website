@@ -1,0 +1,11 @@
+<section class="" id="test">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-12 col-lg-4" *ngFor="let aboutOption of aboutOptions">
+                <app-about-option [imgRoot]="aboutOption.src" [cardText]="aboutOption.text" (click)="selectAbout(aboutOption)"></app-about-option>
+            </div>
+        </div>
+    </div>
+    
+    <app-about-description  #appAboutDescription [aboutDescription]="aboutOptionSelect"></app-about-description>    
+</section>

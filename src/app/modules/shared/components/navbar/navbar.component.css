@@ -1,0 +1,178 @@
+.navbar {
+    width: 100%;
+    z-index: 10;
+    position: absolute;
+    color: var(--primary-color-70)!important;
+    font-weight: bold;
+}
+button{
+    border: solid 2px var(--primary-color);
+}
+i{
+    color: var(--primary-color);
+}
+.second-disappear-scroll button, .second-disappear-scroll i{
+    color: transparent;
+    border: none;
+}
+.nav-link{
+    transition: 0s;
+    padding-left: 15px!important;
+    padding-right: 15px!important;
+}
+
+.bi-cc-square-fill::before {
+    font-size: 30px;
+}
+
+.nav-item:hover a{
+    transform: scale(1.03);
+    color: var(--primary-color)!important;
+}
+
+.navbar-brand{
+    transition: 0.5s;
+}
+.navbar-brand:hover{
+    transform: scale(1.05);
+    color: var(--primary-color);
+}
+.navbar-brand span{
+    font-size: 17px;
+}
+.d-none-navbar{
+    display: none;
+}
+.second-scroll{
+    transition: 1s;
+    display: flex;
+    bottom: 0;
+    background: var(--primary-color-80); /* color fijo */
+    padding-top: 35px;
+}
+.second-scroll .navbar-collapse, .second-disappear-scroll .navbar-collapse{
+    display: none;
+}
+.second-scroll .nav-item a{
+    color: var(--secondary-color)!important;
+}
+.second-scroll .navbar-brand{
+    color: var(--secondary-color);
+}
+.second-disappear-scroll, .second-disappear-scroll a{
+    transition: 1s;
+    display: flex;
+    color: transparent!important;
+    background: transparent;/* color fijo */
+    bottom: 0;
+}
+
+.third-scroll{
+    transition: 1s;
+    display: flex;
+    top: 0;
+    position: fixed;
+    background: var(--primary-color-90);
+    padding-top: 35px;
+    padding-bottom: 10px;
+}
+.third-scroll .nav-item a{
+    color: var(--secondary-color)!important;
+}
+.third-scroll .navbar-brand{
+    color: var(--secondary-color);
+}
+
+.navbar-collapse{
+    transition: .5s;
+}
+.navbar-collapse.show{
+    transition: .5s;
+    height: 0;
+    background-color: transparent;
+}
+.navbar-collapse.show .nav-item a, .navbar-collapse.show .nav-item i{
+    transition: .5s;
+    color: transparent!important;
+}
+.navbar-collapse.show .navbar-nav{
+    margin-top: 2.5rem;
+    --bs-nav-link-padding-y: 1rem;
+    padding-left: 3rem;
+}
+.navbar-collapse.show .navbar-nav a{
+    font-size: 25px;
+}
+
+.navbar-collapse.show.static{
+    height: auto;
+    background-color: var(--secondary-color-80);
+    padding-bottom: 45vh;
+    border-radius: 30px;
+    margin-top: 15px;
+}
+.navbar-collapse.show.static .nav-item a,  .navbar-collapse.show.static .nav-item i{
+    color: var(--primary-color)!important;
+}
+.navbar-collapse.show.dinamic{
+    height: auto;
+    background-color: var(--primary-color-80);
+    padding-bottom: 50vh;
+    border-radius: 30px;
+    margin-top: 15px;
+}
+.third-scroll .navbar-collapse.show.dinamic .nav-item a,
+.third-scroll .navbar-collapse.show.dinamic .nav-item i,
+.second-scroll .navbar-collapse.show.dinamic .nav-item a,
+.second-scroll .navbar-collapse.show.dinamic .nav-item i{
+    color: var(--secondary-color)!important;
+}
+.third-scroll button, .second-scroll button{
+    border: solid 2px var(--secondary-color);
+}
+.third-scroll i, .second-scroll i{
+    color: var(--secondary-color);
+}
+#container-navBar{
+    padding-bottom: 10px;
+}
+
+@media (max-width: 376px){
+    .navbar-collapse.show .navbar-nav{
+        margin-top: 1rem;
+    }
+    .navbar-brand span{
+        font-size: 12px;
+    }
+    .navbar-collapse.show.static{
+        margin-top: 10px;
+        padding-bottom: 13vh;
+    }
+    .navbar-collapse.show .navbar-nav a{
+        font-size: 20px;
+    }
+    .collapse:not(.show) {
+        display: block;
+        height: 0;
+    }
+    .collapse:not(.show) .nav-item a, .collapse:not(.show) .nav-item i{
+        color: transparent!important;
+    }
+}
+
+@media (min-width: 376px) and (max-width: 575.98px) {
+    .navbar-brand span{
+        font-size: 12px;
+    }
+    .navbar-collapse.show.static{
+        padding-bottom: 43vh;
+    }
+    .collapse:not(.show) {
+        display: block;
+        height: 0;
+    }
+    .collapse:not(.show) .nav-item a, .collapse:not(.show) .nav-item i{
+        color: transparent!important;
+    }
+}
+

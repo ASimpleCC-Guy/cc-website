@@ -1,0 +1,23 @@
+.container-fluid{
+    background-color: var(--primary-color-90);
+    padding-top: 110px;
+}
+
+.box-embed-escrito{
+    overflow: auto;
+    margin-top: 20px;
+    height: 500PX;
+    background-color: var(--primary-color-70);
+    border-radius: 5px;
+    padding: 1px;
+}
+
+p{
+    color: var(--secondary-color);
+    text-align: center;
+}
+
+.embed-escrito{
+    padding: 10px;
+    margin: 20px;
+}
